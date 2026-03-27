@@ -121,7 +121,9 @@ loadScripts(document, 'script');</script>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(edu.rpi.legup.puzzle.sudoku.SudokuBoard,edu.rpi.legup.puzzle.sudoku.rules.PossibleCellsForNumberRegionCaseRule,edu.rpi.legup.puzzle.sudoku.SudokuCell)" class="member-name-link">PossibleNumberCaseBoard</a><wbr>(<a href="SudokuBoard.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuBoard</a>&nbsp;baseBoard,
  <a href="rules/PossibleCellsForNumberRegionCaseRule.html" title="class in edu.rpi.legup.puzzle.sudoku.rules">PossibleCellsForNumberRegionCaseRule</a>&nbsp;caseRule,
  <a href="SudokuCell.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuCell</a>&nbsp;cell)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">is the constructor for finding the possible numbers.</div>
+</div>
 </div>
 </section>
 </li>
@@ -138,13 +140,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addPickableCol(int)" class="member-name-link">addPickableCol</a><wbr>(int&nbsp;col)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds a col to the pickable cols hash set.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addPickableRegion(int)" class="member-name-link">addPickableRegion</a><wbr>(int&nbsp;region)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds a region to the pickable regions hash set.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addPickableRow(int)" class="member-name-link">addPickableRow</a><wbr>(int&nbsp;row)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds a row to the pickable rows hash set.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SudokuCell.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuCell</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCell()" class="member-name-link">getCell</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
@@ -161,7 +169,7 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isPickable(edu.rpi.legup.model.gameboard.PuzzleElement,java.awt.event.MouseEvent)" class="member-name-link">isPickable</a><wbr>(<a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;puzzleElement,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/event/MouseEvent.html" title="class or interface in java.awt.event" class="external-link">MouseEvent</a>&nbsp;e)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Checks if a puzzle element is pickable based on the mouse event.</div>
+<div class="block">Does the checking to see if a cell is able to be picked.</div>
 </div>
 </div>
 </div>
@@ -192,6 +200,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">PossibleNumberCaseBoard</span><wbr><span class="parameters">(<a href="SudokuBoard.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuBoard</a>&nbsp;baseBoard,
  <a href="rules/PossibleCellsForNumberRegionCaseRule.html" title="class in edu.rpi.legup.puzzle.sudoku.rules">PossibleCellsForNumberRegionCaseRule</a>&nbsp;caseRule,
  <a href="SudokuCell.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuCell</a>&nbsp;cell)</span></div>
+<div class="block">is the constructor for finding the possible numbers.</div>
 </section>
 </li>
 </ul>
@@ -207,8 +216,7 @@ loadScripts(document, 'script');</script>
 <h3>isPickable</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isPickable</span><wbr><span class="parameters">(<a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;puzzleElement,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/event/MouseEvent.html" title="class or interface in java.awt.event" class="external-link">MouseEvent</a>&nbsp;e)</span></div>
-<div class="block"><span class="description-from-type-label">Description copied from class:&nbsp;<code><a href="../../model/gameboard/CaseBoard.html#isPickable(edu.rpi.legup.model.gameboard.PuzzleElement,java.awt.event.MouseEvent)">CaseBoard</a></code></span></div>
-<div class="block">Checks if a puzzle element is pickable based on the mouse event.</div>
+<div class="block">Does the checking to see if a cell is able to be picked.</div>
 <dl class="notes">
 <dt>Overrides:</dt>
 <dd><code><a href="../../model/gameboard/CaseBoard.html#isPickable(edu.rpi.legup.model.gameboard.PuzzleElement,java.awt.event.MouseEvent)">isPickable</a></code>&nbsp;in class&nbsp;<code><a href="../../model/gameboard/CaseBoard.html" title="class in edu.rpi.legup.model.gameboard">CaseBoard</a></code></dd>
@@ -216,7 +224,7 @@ loadScripts(document, 'script');</script>
 <dd><code>puzzleElement</code> - the puzzle element to check</dd>
 <dd><code>e</code> - the mouse event</dd>
 <dt>Returns:</dt>
-<dd>true if the puzzle element is pickable, false otherwise</dd>
+<dd>true if that cell is pickable and false if not</dd>
 </dl>
 </section>
 </li>
@@ -224,42 +232,73 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="addPickableRegion(int)">
 <h3>addPickableRegion</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addPickableRegion</span><wbr><span class="parameters">(int&nbsp;region)</span></div>
+<div class="block">Adds a region to the pickable regions hash set.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>region</code> - region that is being added.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="addPickableRow(int)">
 <h3>addPickableRow</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addPickableRow</span><wbr><span class="parameters">(int&nbsp;row)</span></div>
+<div class="block">Adds a row to the pickable rows hash set.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>row</code> - row that is being added</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="addPickableCol(int)">
 <h3>addPickableCol</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addPickableCol</span><wbr><span class="parameters">(int&nbsp;col)</span></div>
+<div class="block">Adds a col to the pickable cols hash set.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>col</code> - column that is being added.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getCell()">
 <h3>getCell</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="SudokuCell.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuCell</a></span>&nbsp;<span class="element-name">getCell</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the cell given to the class</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getPickableRegions()">
 <h3>getPickableRegions</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</span>&nbsp;<span class="element-name">getPickableRegions</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the pickable regions hash set.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getPickableRows()">
 <h3>getPickableRows</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</span>&nbsp;<span class="element-name">getPickableRows</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the pickable rows hash set.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getPickableCols()">
 <h3>getPickableCols</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</span>&nbsp;<span class="element-name">getPickableCols</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the pickable col hash set.</dd>
+</dl>
 </section>
 </li>
 </ul>

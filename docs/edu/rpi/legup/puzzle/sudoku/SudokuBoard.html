@@ -143,7 +143,9 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="SudokuCell.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuCell</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getAffected(edu.rpi.legup.puzzle.sudoku.SudokuCell)" class="member-name-link">getAffected</a><wbr>(<a href="SudokuCell.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuCell</a>&nbsp;cell)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">takes in a cell and returns a hash set that has all the cells that affect the given cell</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SudokuCell.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuCell</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCell(int,int)" class="member-name-link">getCell</a><wbr>(int&nbsp;x,
  int&nbsp;y)</code></div>
@@ -171,7 +173,9 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPossibleValues(edu.rpi.legup.puzzle.sudoku.SudokuCell)" class="member-name-link">getPossibleValues</a><wbr>(<a href="SudokuCell.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuCell</a>&nbsp;cell)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">gets all of the possible values that could be in a given cell</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a><wbr>&lt;<a href="SudokuCell.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuCell</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRegion(int)" class="member-name-link">getRegion</a><wbr>(int&nbsp;regionNum)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -337,12 +341,26 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getAffected(edu.rpi.legup.puzzle.sudoku.SudokuCell)">
 <h3>getAffected</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="SudokuCell.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuCell</a>&gt;</span>&nbsp;<span class="element-name">getAffected</span><wbr><span class="parameters">(<a href="SudokuCell.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuCell</a>&nbsp;cell)</span></div>
+<div class="block">takes in a cell and returns a hash set that has all the cells that affect the given cell</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>cell</code> - for what is effecting it</dd>
+<dt>Returns:</dt>
+<dd>a hash set of cells that all affect the given cell.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getPossibleValues(edu.rpi.legup.puzzle.sudoku.SudokuCell)">
 <h3>getPossibleValues</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</span>&nbsp;<span class="element-name">getPossibleValues</span><wbr><span class="parameters">(<a href="SudokuCell.html" title="class in edu.rpi.legup.puzzle.sudoku">SudokuCell</a>&nbsp;cell)</span></div>
+<div class="block">gets all of the possible values that could be in a given cell</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>cell</code> - for the finding the values of</dd>
+<dt>Returns:</dt>
+<dd>a hash set that contains possible values for the given cell</dd>
+</dl>
 </section>
 </li>
 <li>

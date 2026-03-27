@@ -120,13 +120,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getModelColumnNumbers(int)" class="member-name-link">getModelColumnNumbers</a><wbr>(int&nbsp;index)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the col by breaking up the groups into which group of 9 the cell is in.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getModelRegionNumbers(int)" class="member-name-link">getModelRegionNumbers</a><wbr>(int&nbsp;index)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">gets the 3x3 segment the location in</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getModelRowNumbers(int)" class="member-name-link">getModelRowNumbers</a><wbr>(int&nbsp;index)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">get which row by the taking the modulus down from column</div>
+</div>
 </div>
 </div>
 </div>
@@ -162,18 +168,39 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getModelRegionNumbers(int)">
 <h3>getModelRegionNumbers</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getModelRegionNumbers</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
+<div class="block">gets the 3x3 segment the location in</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>index</code> - the index of a cell.</dd>
+<dt>Returns:</dt>
+<dd>Regional numbers for the model size</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getModelRowNumbers(int)">
 <h3>getModelRowNumbers</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getModelRowNumbers</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
+<div class="block">get which row by the taking the modulus down from column</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>index</code> - of the cell</dd>
+<dt>Returns:</dt>
+<dd>the row number</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getModelColumnNumbers(int)">
 <h3>getModelColumnNumbers</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getModelColumnNumbers</span><wbr><span class="parameters">(int&nbsp;index)</span></div>
+<div class="block">Gets the col by breaking up the groups into which group of 9 the cell is in.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>index</code> - of the cell</dd>
+<dt>Returns:</dt>
+<dd>the column number</dd>
+</dl>
 </section>
 </li>
 </ul>

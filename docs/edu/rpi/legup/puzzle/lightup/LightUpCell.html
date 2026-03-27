@@ -120,7 +120,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,java.awt.Point)" class="member-name-link">LightUpCell</a><wbr>(int&nbsp;valueInt,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/Point.html" title="class or interface in java.awt" class="external-link">Point</a>&nbsp;location)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">LightUpCell Constructor - creates a LightUpCell from the specified value and location</div>
+</div>
 </div>
 </section>
 </li>
@@ -138,21 +140,29 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="LightUpCell.html" title="class in edu.rpi.legup.puzzle.lightup">LightUpCell</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#copy()" class="member-name-link">copy</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Performs a deep copy on the grid cell</div>
+<div class="block">Performs a deep copy on the LightUpCell</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="LightUpCellType.html" title="enum class in edu.rpi.legup.puzzle.lightup">LightUpCellType</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getType()" class="member-name-link">getType</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the type of this LightUpCell</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isLite()" class="member-name-link">isLite</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets whether this LightUpCell is illuminated</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setLite(boolean)" class="member-name-link">setLite</a><wbr>(boolean&nbsp;isLite)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets whether this LightUpCell is illuminated</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setType(edu.rpi.legup.model.elements.Element,java.awt.event.MouseEvent)" class="member-name-link">setType</a><wbr>(<a href="../../model/elements/Element.html" title="class in edu.rpi.legup.model.elements">Element</a>&nbsp;e,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/event/MouseEvent.html" title="class or interface in java.awt.event" class="external-link">MouseEvent</a>&nbsp;m)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the type of this LightUpCell</div>
+</div>
 </div>
 </div>
 </div>
@@ -181,6 +191,12 @@ loadScripts(document, 'script');</script>
 <h3>LightUpCell</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">LightUpCell</span><wbr><span class="parameters">(int&nbsp;valueInt,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/Point.html" title="class or interface in java.awt" class="external-link">Point</a>&nbsp;location)</span></div>
+<div class="block">LightUpCell Constructor - creates a LightUpCell from the specified value and location</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>valueInt</code> - value of the LightUpCell</dd>
+<dd><code>location</code> - position of the LightUpCell</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -196,9 +212,12 @@ loadScripts(document, 'script');</script>
 <h3>setType</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setType</span><wbr><span class="parameters">(<a href="../../model/elements/Element.html" title="class in edu.rpi.legup.model.elements">Element</a>&nbsp;e,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/java/awt/event/MouseEvent.html" title="class or interface in java.awt.event" class="external-link">MouseEvent</a>&nbsp;m)</span></div>
+<div class="block">Sets the type of this LightUpCell</div>
 <dl class="notes">
 <dt>Overrides:</dt>
 <dd><code><a href="../../model/gameboard/PuzzleElement.html#setType(edu.rpi.legup.model.elements.Element,java.awt.event.MouseEvent)">setType</a></code>&nbsp;in class&nbsp;<code><a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></dd>
+<dt>Parameters:</dt>
+<dd><code>e</code> - element to set the type of this binary cell to</dd>
 </dl>
 </section>
 </li>
@@ -206,31 +225,45 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getType()">
 <h3>getType</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="LightUpCellType.html" title="enum class in edu.rpi.legup.puzzle.lightup">LightUpCellType</a></span>&nbsp;<span class="element-name">getType</span>()</div>
+<div class="block">Gets the type of this LightUpCell</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>type of LightUpCell</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isLite()">
 <h3>isLite</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isLite</span>()</div>
+<div class="block">Gets whether this LightUpCell is illuminated</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if the cell is lit, false otherwise</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setLite(boolean)">
 <h3>setLite</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setLite</span><wbr><span class="parameters">(boolean&nbsp;isLite)</span></div>
+<div class="block">Sets whether this LightUpCell is illuminated</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>isLite</code> - true if the cell should be lit, false otherwise</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="copy()">
 <h3>copy</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="LightUpCell.html" title="class in edu.rpi.legup.puzzle.lightup">LightUpCell</a></span>&nbsp;<span class="element-name">copy</span>()</div>
-<div class="block"><span class="description-from-type-label">Description copied from class:&nbsp;<code><a href="../../model/gameboard/GridCell.html#copy()">GridCell</a></code></span></div>
-<div class="block">Performs a deep copy on the grid cell</div>
+<div class="block">Performs a deep copy on the LightUpCell</div>
 <dl class="notes">
 <dt>Overrides:</dt>
 <dd><code><a href="../../model/gameboard/GridCell.html#copy()">copy</a></code>&nbsp;in class&nbsp;<code><a href="../../model/gameboard/GridCell.html" title="class in edu.rpi.legup.model.gameboard">GridCell</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></dd>
 <dt>Returns:</dt>
-<dd>a new copy of the grid cell that is independent of this one</dd>
+<dd>a new copy of the LightUpCell that is independent of this one</dd>
 </dl>
 </section>
 </li>

@@ -120,19 +120,22 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#checkBoardForContradiction(edu.rpi.legup.puzzle.fillapix.FillapixBoard)" class="member-name-link">checkBoardForContradiction</a><wbr>(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Checks the whole board for contradictions that might occur by checking each cell
+  against the <code>TooManyBlackCellsContradictionRule</code> and <code>TooManyBlackCellsContradictionRule</code></div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayList.html" title="class or interface in java.util" class="external-link">ArrayList</a><wbr>&lt;<a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getAdjacentCells(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)" class="member-name-link">getAdjacentCells</a><wbr>(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
  <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Gets all cells adjacent to a specific cell.</div>
+<div class="block">Gets all cells adjacent to <code>cell</code>.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayList.html" title="class or interface in java.util" class="external-link">ArrayList</a><wbr>&lt;<a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getCellsAtDistance(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell,int)" class="member-name-link">getCellsAtDistance</a><wbr>(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
  <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell,
  int&nbsp;distance)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Gets all cells that are contained in the square defined as having 'distance' cells between
+<div class="block">Gets all cells that are contained in the square defined as having '<code>distance</code>' cells between
  the center and the outer wall.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayList.html" title="class or interface in java.util" class="external-link">ArrayList</a><wbr>&lt;boolean[]&gt;</code></div>
@@ -145,19 +148,27 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#hasEmptyAdjacent(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)" class="member-name-link">hasEmptyAdjacent</a><wbr>(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
  <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Sees if any of the adjacent cells are empty.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#isComplete(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)" class="member-name-link">isComplete</a><wbr>(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
  <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Checks to see if an individual cell is complete.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#isForcedBlack(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)" class="member-name-link">isForcedBlack</a><wbr>(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
  <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Sees that if a cell is forced to be Black by the rules.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#isForcedWhite(edu.rpi.legup.puzzle.fillapix.FillapixBoard,edu.rpi.legup.puzzle.fillapix.FillapixCell)" class="member-name-link">isForcedWhite</a><wbr>(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
  <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Sees that if a cell is forced to be white by the rules.</div>
+</div>
 </div>
 </div>
 </div>
@@ -194,6 +205,14 @@ loadScripts(document, 'script');</script>
 <h3>isForcedBlack</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isForcedBlack</span><wbr><span class="parameters">(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
  <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</span></div>
+<div class="block">Sees that if a cell is forced to be Black by the rules.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>board</code> - gets the board to read from</dd>
+<dd><code>cell</code> - the cell that is being checked against</dd>
+<dt>Returns:</dt>
+<dd><code>true</code> if there is too many white cell which would force it to be black by comparing against adjacent cells.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -201,6 +220,14 @@ loadScripts(document, 'script');</script>
 <h3>isForcedWhite</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isForcedWhite</span><wbr><span class="parameters">(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
  <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</span></div>
+<div class="block">Sees that if a cell is forced to be white by the rules.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>board</code> - gets the board to read from</dd>
+<dd><code>cell</code> - the cell that is being checked against</dd>
+<dt>Returns:</dt>
+<dd><code>true</code> if there is too many black cell which would force it to be white by comparing against adjacent cells.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -208,6 +235,15 @@ loadScripts(document, 'script');</script>
 <h3>isComplete</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isComplete</span><wbr><span class="parameters">(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
  <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</span></div>
+<div class="block">Checks to see if an individual cell is complete.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>board</code> - is the board that is being read from</dd>
+<dd><code>cell</code> - is the cell that is having the adjacent cells grabbed and checking completeness on</dd>
+<dt>Returns:</dt>
+<dd><code>true</code> if the number of black cells surrounding the current cell is equal to the
+             number the cell contains otherwise return <code>false</code>.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -215,6 +251,14 @@ loadScripts(document, 'script');</script>
 <h3>hasEmptyAdjacent</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">hasEmptyAdjacent</span><wbr><span class="parameters">(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
  <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</span></div>
+<div class="block">Sees if any of the adjacent cells are empty.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>board</code> - is the board that is being read from</dd>
+<dd><code>cell</code> - is the cell that is having the adjacent cells checked</dd>
+<dt>Returns:</dt>
+<dd><code>true</code> if any adjacent cells are empty</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -222,7 +266,14 @@ loadScripts(document, 'script');</script>
 <h3>getAdjacentCells</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayList.html" title="class or interface in java.util" class="external-link">ArrayList</a>&lt;<a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&gt;</span>&nbsp;<span class="element-name">getAdjacentCells</span><wbr><span class="parameters">(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
  <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell)</span></div>
-<div class="block">Gets all cells adjacent to a specific cell. The cell itself will be included.</div>
+<div class="block">Gets all cells adjacent to <code>cell</code>. The <code>cell</code> itself will be included.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>board</code> - is the board that is being read from</dd>
+<dd><code>cell</code> - is the cell that is having the adjacent cells grabbed</dd>
+<dt>Returns:</dt>
+<dd>all the adjacent cells and the current cell in an array list</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -231,8 +282,8 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayList.html" title="class or interface in java.util" class="external-link">ArrayList</a>&lt;<a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&gt;</span>&nbsp;<span class="element-name">getCellsAtDistance</span><wbr><span class="parameters">(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board,
  <a href="FillapixCell.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixCell</a>&nbsp;cell,
  int&nbsp;distance)</span></div>
-<div class="block">Gets all cells that are contained in the square defined as having 'distance' cells between
- the center and the outer wall. For example, distance = 1:
+<div class="block">Gets all cells that are contained in the square defined as having '<code>distance</code>' cells between
+ the center and the outer wall. For example, <code>distance</code> = 1:
 
  <p>|X|X|X|X|X|
 
@@ -245,6 +296,14 @@ loadScripts(document, 'script');</script>
  <p>|X|X|X|X|X|
 
  <p>O is 'cell', and all 'X' will be returned in the ArrayList</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>board</code> - the board for getting the elements of the box</dd>
+<dd><code>cell</code> - is the center of the box that is made</dd>
+<dd><code>distance</code> - the distance around center that the box is formed</dd>
+<dt>Returns:</dt>
+<dd>ArrayList that contains all the square</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -274,6 +333,14 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="checkBoardForContradiction(edu.rpi.legup.puzzle.fillapix.FillapixBoard)">
 <h3>checkBoardForContradiction</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">checkBoardForContradiction</span><wbr><span class="parameters">(<a href="FillapixBoard.html" title="class in edu.rpi.legup.puzzle.fillapix">FillapixBoard</a>&nbsp;board)</span></div>
+<div class="block">Checks the whole board for contradictions that might occur by checking each cell
+  against the <code>TooManyBlackCellsContradictionRule</code> and <code>TooManyBlackCellsContradictionRule</code></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>board</code> - that is being checked.</dd>
+<dt>Returns:</dt>
+<dd><code>True</code> if there is a contradiction and <code>False</code> otherwise</dd>
+</dl>
 </section>
 </li>
 </ul>

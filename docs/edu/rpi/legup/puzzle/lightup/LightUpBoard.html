@@ -119,10 +119,14 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int)" class="member-name-link">LightUpBoard</a><wbr>(int&nbsp;size)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">LightUpBoard Constructor - creates a square LightUpBoard of the specified size</div>
+</div>
 <div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(int,int)" class="member-name-link">LightUpBoard</a><wbr>(int&nbsp;width,
  int&nbsp;height)</code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">LightUpBoard Constructor - creates a LightUpBoard of the specified width and height</div>
+</div>
 </div>
 </section>
 </li>
@@ -140,7 +144,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="LightUpBoard.html" title="class in edu.rpi.legup.puzzle.lightup">LightUpBoard</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#copy()" class="member-name-link">copy</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Performs a deep copy of the Board</div>
+<div class="block">Performs a deep copy of the LightUpBoard</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#fillWithLight()" class="member-name-link">fillWithLight</a>()</code></div>
@@ -157,7 +161,7 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCell(int,int)" class="member-name-link">getCell</a><wbr>(int&nbsp;x,
  int&nbsp;y)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets a <a href="../../model/gameboard/GridCell.html" title="class in edu.rpi.legup.model.gameboard"><code>GridCell</code></a> from the board.</div>
+<div class="block">Gets the LightUpCell at a specific location</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNumAdj(edu.rpi.legup.puzzle.lightup.LightUpCell,edu.rpi.legup.puzzle.lightup.LightUpCellType)" class="member-name-link">getNumAdj</a><wbr>(<a href="LightUpCell.html" title="class in edu.rpi.legup.puzzle.lightup">LightUpCell</a>&nbsp;cell,
@@ -178,8 +182,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#notifyChange(edu.rpi.legup.model.gameboard.PuzzleElement)" class="member-name-link">notifyChange</a><wbr>(<a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;puzzleElement)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Called when a <a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard"><code>PuzzleElement</code></a> data on this has changed and passes in the equivalent
- puzzle element with the new data.</div>
+<div class="block">Notifies the board of a change to a puzzle element and updates lighting</div>
 </div>
 </div>
 </div>
@@ -209,12 +212,23 @@ loadScripts(document, 'script');</script>
 <h3>LightUpBoard</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">LightUpBoard</span><wbr><span class="parameters">(int&nbsp;width,
  int&nbsp;height)</span></div>
+<div class="block">LightUpBoard Constructor - creates a LightUpBoard of the specified width and height</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>width</code> - width of the board</dd>
+<dd><code>height</code> - height of the board</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="&lt;init&gt;(int)">
 <h3>LightUpBoard</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">LightUpBoard</span><wbr><span class="parameters">(int&nbsp;size)</span></div>
+<div class="block">LightUpBoard Constructor - creates a square LightUpBoard of the specified size</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>size</code> - width and height of the board</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -292,8 +306,7 @@ loadScripts(document, 'script');</script>
 <h3>getCell</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="LightUpCell.html" title="class in edu.rpi.legup.puzzle.lightup">LightUpCell</a></span>&nbsp;<span class="element-name">getCell</span><wbr><span class="parameters">(int&nbsp;x,
  int&nbsp;y)</span></div>
-<div class="block"><span class="description-from-type-label">Description copied from class:&nbsp;<code><a href="../../model/gameboard/GridBoard.html#getCell(int,int)">GridBoard</a></code></span></div>
-<div class="block">Gets a <a href="../../model/gameboard/GridCell.html" title="class in edu.rpi.legup.model.gameboard"><code>GridCell</code></a> from the board.</div>
+<div class="block">Gets the LightUpCell at a specific location</div>
 <dl class="notes">
 <dt>Overrides:</dt>
 <dd><code><a href="../../model/gameboard/GridBoard.html#getCell(int,int)">getCell</a></code>&nbsp;in class&nbsp;<code><a href="../../model/gameboard/GridBoard.html" title="class in edu.rpi.legup.model.gameboard">GridBoard</a></code></dd>
@@ -301,7 +314,7 @@ loadScripts(document, 'script');</script>
 <dd><code>x</code> - x location of the cell</dd>
 <dd><code>y</code> - y location of the cell</dd>
 <dt>Returns:</dt>
-<dd>grid cell at location (x, y)</dd>
+<dd>cell at location x, y</dd>
 </dl>
 </section>
 </li>
@@ -309,14 +322,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="notifyChange(edu.rpi.legup.model.gameboard.PuzzleElement)">
 <h3>notifyChange</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">notifyChange</span><wbr><span class="parameters">(<a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard">PuzzleElement</a>&nbsp;puzzleElement)</span></div>
-<div class="block"><span class="description-from-type-label">Description copied from class:&nbsp;<code><a href="../../model/gameboard/Board.html#notifyChange(edu.rpi.legup.model.gameboard.PuzzleElement)">Board</a></code></span></div>
-<div class="block">Called when a <a href="../../model/gameboard/PuzzleElement.html" title="class in edu.rpi.legup.model.gameboard"><code>PuzzleElement</code></a> data on this has changed and passes in the equivalent
- puzzle element with the new data.</div>
+<div class="block">Notifies the board of a change to a puzzle element and updates lighting</div>
 <dl class="notes">
 <dt>Overrides:</dt>
 <dd><code><a href="../../model/gameboard/Board.html#notifyChange(edu.rpi.legup.model.gameboard.PuzzleElement)">notifyChange</a></code>&nbsp;in class&nbsp;<code><a href="../../model/gameboard/Board.html" title="class in edu.rpi.legup.model.gameboard">Board</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>puzzleElement</code> - equivalent puzzle element with the new data.</dd>
+<dd><code>puzzleElement</code> - the puzzle element that has changed</dd>
 </dl>
 </section>
 </li>
@@ -324,13 +335,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="copy()">
 <h3>copy</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="LightUpBoard.html" title="class in edu.rpi.legup.puzzle.lightup">LightUpBoard</a></span>&nbsp;<span class="element-name">copy</span>()</div>
-<div class="block"><span class="description-from-type-label">Description copied from class:&nbsp;<code><a href="../../model/gameboard/GridBoard.html#copy()">GridBoard</a></code></span></div>
-<div class="block">Performs a deep copy of the Board</div>
+<div class="block">Performs a deep copy of the LightUpBoard</div>
 <dl class="notes">
 <dt>Overrides:</dt>
 <dd><code><a href="../../model/gameboard/GridBoard.html#copy()">copy</a></code>&nbsp;in class&nbsp;<code><a href="../../model/gameboard/GridBoard.html" title="class in edu.rpi.legup.model.gameboard">GridBoard</a></code></dd>
 <dt>Returns:</dt>
-<dd>a new copy of the board that is independent of this one</dd>
+<dd>a new copy of the LightUpBoard that is independent of this one</dd>
 </dl>
 </section>
 </li>

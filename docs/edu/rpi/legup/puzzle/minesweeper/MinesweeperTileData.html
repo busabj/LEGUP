@@ -155,7 +155,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#equals(java.lang.Object)" class="member-name-link">equals</a><wbr>(@Nullable <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Indicates whether some other object is "equal to" this one.</div>
+<div class="block">compares two tile objects to see if they are equal</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static @NotNull <a href="MinesweeperTileData.html" title="class in edu.rpi.legup.puzzle.minesweeper">MinesweeperTileData</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#fromData(int)" class="member-name-link">fromData</a><wbr>(int&nbsp;data)</code></div>
@@ -319,6 +319,10 @@ loadScripts(document, 'script');</script>
 <h3>unset</h3>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="modifiers">public static</span>&nbsp;<span class="return-type">@NotNull <a href="MinesweeperTileData.html" title="class in edu.rpi.legup.puzzle.minesweeper">MinesweeperTileData</a></span>&nbsp;<span class="element-name">unset</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the unset status</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -326,6 +330,10 @@ loadScripts(document, 'script');</script>
 <h3>mine</h3>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="modifiers">public static</span>&nbsp;<span class="return-type">@NotNull <a href="MinesweeperTileData.html" title="class in edu.rpi.legup.puzzle.minesweeper">MinesweeperTileData</a></span>&nbsp;<span class="element-name">mine</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the mine status</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -333,30 +341,50 @@ loadScripts(document, 'script');</script>
 <h3>empty</h3>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="modifiers">public static</span>&nbsp;<span class="return-type">@NotNull <a href="MinesweeperTileData.html" title="class in edu.rpi.legup.puzzle.minesweeper">MinesweeperTileData</a></span>&nbsp;<span class="element-name">empty</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the empty status</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isUnset()">
 <h3>isUnset</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isUnset</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if the tile is unset</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isMine()">
 <h3>isMine</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isMine</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if the tile is a mine</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isEmpty()">
 <h3>isEmpty</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isEmpty</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if the tile is empty</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isNumber()">
 <h3>isNumber</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isNumber</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if the tile has a number in it</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -364,14 +392,14 @@ loadScripts(document, 'script');</script>
 <h3>equals</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">equals</span><wbr><span class="parameters">(@Nullable
  @Nullable <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</span></div>
-<div class="block">Indicates whether some other object is "equal to" this one. The objects are equal if the other object is of the same class and if all the record components are equal. Reference components are compared with <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)" title="class or interface in java.util" class="external-link"><code>Objects::equals(Object,Object)</code></a>; primitive components are compared with '=='.</div>
+<div class="block">compares two tile objects to see if they are equal</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Record.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a></code></dd>
 <dt>Parameters:</dt>
-<dd><code>o</code> - the object with which to compare</dd>
+<dd><code>o</code> - the object being compared against</dd>
 <dt>Returns:</dt>
-<dd><code>true</code> if this object is the same as the <code>o</code> argument; <code>false</code> otherwise.</dd>
+<dd>true if the two tile are equal to each other</dd>
 </dl>
 </section>
 </li>
